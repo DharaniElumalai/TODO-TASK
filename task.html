@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Todo list</title>
+   
+</head>
+<style>
+ #container{
+   background-color: rgb(236, 243, 243);
+   width: 400px;
+   margin: 1%;
+   padding: 10px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   height: 600px;
+   
+ }
+ header{
+  background-color: cadetblue;
+  width: 390px;
+  height: 200px;
+  background-size: 100% 200%;
+  border-radius: 15px 15px 15px 15px;
+  position:relative;
+  margin-bottom: 3%;
+ }
+ h1{
+  font-size: 70px;
+  padding: 1%;
+ }
+ 
+ #task_input{
+  width: 300px;
+  margin-left: 2%;
+  padding: 3%;
+ }
+ #edit_btn{
+  float: right;
+  font-size: 13px;
+  padding-left: 5px;
+  margin-top:-8% ;
+  cursor: pointer;
+  background-color: rgb(101, 110, 110);
+  
+ }
+ #edit_btn:hover{
+  background-color: #4c5c63; 
+ 
+ }
+ #delete_btn{
+  float: right;
+  font-size: 13px;
+  padding-left: 5px;
+  margin-top:-8% ;
+  margin-right: 14%;
+  cursor: pointer;
+  background-color: rgb(101, 110, 110);
+ }
+ #delete_btn:hover{
+  background-color: #4c5c63; 
+ }
+ #add_btn{
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(101, 110, 110);
+ }
+ #add_btn:hover{
+  background-color: #4c5c63; 
+ 
+ }
+</style>
+<body>
+    <div id="container">
+      <header id="header">
+      <div id="head">
+        <h1>Todo List</h1>
+      </div>
+    <div id="new_container">
+      <form id="form">
+      <input type="text" name="task" id="task_input" placeholder="Enter your new task">
+      <button type="submit" id="add_btn">
+        Add
+      </button>
+      
+      </form >
+    </div>
+  </header>
+  <div id="todolist">
+    
+  </div>
+  <script src="task.js"></script>
+</body>
+</html>
